@@ -10,11 +10,11 @@ In this article I will show you how to create a personal assistant with LLM faci
  
 First, we need to efficiently structure our project. For our purposes, we will use the following structure:
 
-/personal_assistant_project
-│
+personal_assistant_project
+
 ├── .env              
 ├── main.py   
-├── Dockerfile
+├── Dockerfile  
 ├── utils.py                      
 └── requirements.txt 
 
