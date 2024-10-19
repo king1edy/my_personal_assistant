@@ -39,3 +39,5 @@ Using a .env file is a standard way to safely secure our API keys for use in the
 With the preparation ready, we would set up the utils.py file, which would become the backbone of our personal assistant project.
 
 Initially, we will prepare all the packages we would use during the project.
+
+https://www.kdnuggets.com/creating-a-personal-assistant-with-langchain
