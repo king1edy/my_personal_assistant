@@ -41,3 +41,22 @@ With the preparation ready, we would set up the utils.py file, which would becom
 Initially, we will prepare all the packages we would use during the project.
 
 https://www.kdnuggets.com/creating-a-personal-assistant-with-langchain
+
+### Build the image
+
+To build a container image using the Dockerfile from the you use the docker build command:
+
+### docker build -t my_gpt:latest . ###
+
+
+The -t my_gpt:latest option specifies the name and tag of the image.
+
+The single dot (.) at the end of the command sets the build context to the current directory. This means that the build expects to find the Dockerfile and the hello.py file in the directory where the command is invoked. If those files aren't there, the build fails.
+
+After the image has been built, you can run the application as a container with docker run, specifying the image name:
+
+### docker run -e OPENAI_API_KEY=YourOPENAI_API_KEY my_gpt:latest ###
+* Run the docker image.
+To set the OPENAI_API_KEY as an env variable when you run the image.
+You can use the -e flag to set or override an environment variable when running a container. You can specify multiple variables by using multiple -e flags.
+
